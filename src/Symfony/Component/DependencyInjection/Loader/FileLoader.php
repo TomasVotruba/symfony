@@ -48,9 +48,10 @@ abstract class FileLoader extends BaseFileLoader
     /**
      * {@inheritdoc}
      *
-     * @param bool|string $ignoreErrors Whether errors should be ignored; pass "not_found" to ignore only when the loaded resource is not found
+     * @param bool|string 
+     Errors Whether errors should be ignored; pass "not_found" to ignore only when the loaded resource is not found
      */
-    public function import($resource, $type = null, $ignoreErrors = false, $sourceResource = null, $exclude = null)
+    public function import($resource, $type = null, bool $ignoreErrors = false, $sourceResource = null, $exclude = null)
     {
         $args = \func_get_args();
 
